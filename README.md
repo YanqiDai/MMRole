@@ -30,6 +30,29 @@ Extensive evaluation results demonstrate the improved performance of *MMRole-Age
 
 All data in *MMRole-Data*, including character profiles, images, dialogues, and formatted instruction-following data, and the training and validation data for the reward model in *MMRole-Eval* can be downloaded from [MMRole_dataset](https://huggingface.co/datasets/YanqiDai/MMRole_dataset).
 Please download and save them in the root directory, excluding the ```README.md``` file.
+Besides, please download ```train2017``` from [MS-COCO](https://cocodataset.org/#download) and save them in the ```images/COCO/train2017``` directory.
+
+```
+MMRole_dataset
+├── data
+│   ├── test
+│   │   ├── in-distribution
+│   │   └── out-of-distribution
+│   └── train
+│       └── train_85k.json
+├── dialogues
+├── images
+│   ├── annotations.json
+│   ├── COCO
+│   │   └── train2017
+│   ├── Harry_Potter
+│   └── ...
+├── profiles
+└── RM_data
+    ├── test
+    └── train
+        └── RM-train_23k.json
+```
 
 ## Environment Requirements
 
