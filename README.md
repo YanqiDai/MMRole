@@ -67,29 +67,33 @@ Make sure you meet the above requirements, and then install the dependent librar
 pip install -r requirement.txt
 ```
 
-## Inference and Training of *MMRole-Agent*
+## Inference of *MMRole-Agent* (Answering for *MMRole-Eval*) 
 
 Please download the model weights of *MMRole-Agent* from [MMRole-Agent](https://huggingface.co/YanqiDai/MMRole-Agent) and save them in the ```model_weights``` directory.
 
-Run the following script to use *MMRole-Agent* for inference:
+Run the following script to utilize *MMRole-Agent* for generating answers for the In-Test and Out-Test test sets in *MMRole-Eval*:
 ```bash
 bash inference.sh
 ```
+
+## Training of *MMRole-Agent*
 
 To develop *MMRole-Agent*, you need to first download the model weights of QWen-VL-Chat from [QWen-VL-Chat](https://huggingface.co/Qwen/Qwen-VL-Chat), then run the following script for fine-tuning:
 ```bash
 bash finetune/finetune_ds.sh
 ```
 
-## Inference and Training of the reward model in *MMRole-Eval*
+## Inference of the reward model in *MMRole-Eval* (Scoring for *MMRole-Eval*)
 
 Please download the model weights of the reward model in *MMRole-Eval* from [MMRole-Eval_RM](https://huggingface.co/YanqiDai/MMRole-Eval_RM) and save them in the ```model_weights``` directory.
 
-Run the following script to use the reward model in *MMRole-Eval* for evaluating MRPAs:
+Run the following script to utilize the reward model in *MMRole-Eval* for scoring answers of MRPAs for the In-Test and Out-Test test sets in *MMRole-Eval*:
 ```bash
 bash eval/RM_review.sh
 bash eval/RM_result.sh
 ```
+
+## Training of the reward model in *MMRole-Eval*
 
 To develop the reward model in *MMRole-Eval*, you need to first download the model weights of QWen-VL-Chat from [QWen-VL-Chat](https://huggingface.co/Qwen/Qwen-VL-Chat), then run the following script for fine-tuning:
 ```bash
