@@ -1,5 +1,5 @@
 transformers==4.32.0
-accelerate
+accelerate==0.29.3
 tiktoken
 einops
 transformers_stream_generator==0.0.4
@@ -8,6 +8,6 @@ torchvision
 pillow
 tensorboard
 matplotlib
-deepspeed
+deepspeed==0.14.2
 peft
 wandb
