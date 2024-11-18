@@ -9,4 +9,5 @@ pillow
 tensorboard
 matplotlib
 deepspeed
+peft
 wandb
