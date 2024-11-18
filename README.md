@@ -64,7 +64,7 @@ The environment requirements are consistent with QWen-VL-Chat.
 Make sure you meet the above requirements, and then install the dependent libraries.
 
 ```bash
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 ## Inference of *MMRole-Agent* (Answering for *MMRole-Eval*) 
