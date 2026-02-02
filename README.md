@@ -1,4 +1,4 @@
-# (ICLR'25) *MMRole*: A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents
+# [ICLR 2025] *MMRole*: A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents
 
 ![](assets/mmrole.png)
 
